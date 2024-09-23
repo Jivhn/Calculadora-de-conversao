@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)file:///C:/Users/Marise%20Miranda/Downloads/Marises%20Machine.html -->
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machina Machine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+        <div class="bg-image"></div>
+        <header>
+            <h1>Maccina Machine</h1>
+            <p class="p">Made by: Erick Lee && Jinwoo</p>
+        </header>
+
+        <div class="calculadora">
+            <div class="container">
+                <p class="p_decimal">Insira um número em decimal para ser convertido:</p>
+                    <br>
+                <input id="idDecimal" type="text" placeholder="Digite o valor em decimal" onkeyup="converter()">
+                <h3>Converter para:</h3>
+                <span>Octal:</span>
+                <input onclick="aparecer_octal()" type="checkbox" id="checkbox_octal">
+                    <div id="idOctal" class="clssOctal">0</div>
+
+                <span>Hexadecimal:</span>
+                <input onclick="aparecer_hexa()" type="checkbox" id="checkbox_hexa">
+                    <div id="idHexadecimal" class="clssHexa">0</div>
+
+                <span>Binário:</span>
+                <input onclick="aparecer_bin()" type="checkbox" id="checkbox_binario">
+                    <div id="idNaoBinario" class="clssBin">0</div>
+            </div>
+        </div>
+    </center>
+    <script src="script.js"></script>
+</body>
+</html>
+

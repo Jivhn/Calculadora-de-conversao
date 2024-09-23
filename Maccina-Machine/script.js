@@ -9,15 +9,15 @@ function converter() {
     console.log(hexadecimal);
     console.log(binaria);
 
-    document.getElementById("iDecimal").innerHTML = ` ${decimal}`;
+    document.getElementById("idDecimal").innerHTML = ` ${decimal}`;
     document.getElementById("idOctal").innerHTML = ` ${octal}`;
     document.getElementById("idHexadecimal").innerHTML = ` ${hexadecimal.toUpperCase()}`;
     document.getElementById("idNaoBinario").innerHTML = ` ${binaria}`;
 }
 
 function aparecer_bin() {
-    const checkbox = document.getElementById("checkbox_bin");
-    const elementoAMostrar = document.getElementById("demo4");
+    const checkbox = document.getElementById("checkbox_binario");
+    const elementoAMostrar = document.getElementById("idNaoBinario");
     if (checkbox.checked) {
         elementoAMostrar.style.display = "block";
     } else {
@@ -27,19 +27,17 @@ function aparecer_bin() {
 
 function aparecer_hexa() {
     const checkbox = document.getElementById("checkbox_hexa");
-    const elementoAMostrar = document.getElementById("demo3");
+    const elementoAMostrar = document.getElementById("idHexadecimal");
     if (checkbox.checked) {
         elementoAMostrar.style.display = "block";
     } else {
         elementoAMostrar.style.display = "none";
     }
-
-    
 }
 
 function aparecer_octal() {
     const checkbox = document.getElementById("checkbox_octal");
-    const elementoAMostrar = document.getElementById("demo2");
+    const elementoAMostrar = document.getElementById("idOctal");
     if (checkbox.checked) {
         elementoAMostrar.style.display = "block";
     } else {
