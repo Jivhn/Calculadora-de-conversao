@@ -1,4 +1,4 @@
-# Calculadora-de-conversao
+# Calculadora de Conversão Maccina Machine
 
 Conversor de Decimal, Octal, Hexadecimal e Binário.
 
